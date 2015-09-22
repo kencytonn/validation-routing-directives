@@ -1,0 +1,78 @@
+<!-- <!DOCTYPE html>
+<html ng-app="bookstore">
+<head>
+<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="../style.css"/>
+<script type="text/javascript" src="../angular.min.js"></script>
+<script type="text/javascript" src="../app.js"></script>
+</head>
+<body ng-controller="LoginController"> -->
+
+<form class="form-horizontal" name="myApp"   novalidate>
+<fieldset>
+
+<!-- Form Name -->
+<legend>SignUp an Account!!</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="f_name">FirstName</label>  
+  <div class="col-md-5">
+  <input id="f_name" name="f_name" type="text" placeholder="firstname" ng-model="user.f_name" class="form-control input-md" required="">
+    <span ng-show="myApp.f_name.$dirty && myApp.f_name.$error.required">Required: Enter FirstName</span>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="l_name">LastName</label>  
+  <div class="col-md-5">
+  <input id="l_name" name="l_name" type="text" placeholder="Enter Lastname" ng-model="user.l_name" class="form-control input-md" required="">
+    <span ng-show="myApp.l_name.$dirty && myApp.l_name.$error.required">Required: Enter LastName</span>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="username">UserName*</label>  
+  <div class="col-md-5">
+  <input id="username" name="username" type="text" placeholder="Enter username" ng-model="user.username" class="form-control input-md" required="">
+   <span ng-show="myApp.username.$dirty && myApp.username.$error.required">Required: Enter UserName</span> 
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="p_word">Password</label>
+  <div class="col-md-5">
+    <input id="p_word" name="p_word" type="password" placeholder="*****" ng-model="user.p_word" class="form-control input-md" required="">
+    <span ng-show="myApp.up_word.$dirty && myApp.up_word.$error.required">Required: Enter Password</span>
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="p_word2">Repeat password</label>
+  <div class="col-md-5">
+    <input id="p_word2" name="p_word2" type="password" placeholder="*******" ng-model="user.p_word2" class="form-control input-md" required="">
+    <span ng-show="myApp.up_word2.$dirty && myApp.up_word2.$error.required">Repeat your password</span>
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="signup"></label>
+  <div class="col-md-8">
+    <button id="signup" name="signup" class="btn btn-primary">SignUp</button>
+    <button id="back" name="back" class="btn btn-danger">Back</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+<!-- </body>
+</html> -->
+
+
+

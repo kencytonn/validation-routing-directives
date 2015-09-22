@@ -1,0 +1,6 @@
+input.ng-dirty.ng-invalid{ border-style:1px solid;
+    border-color:#FBA3A3;}
+input.ng-invalid{ border-style:1px solid;
+    border-color:#FBA3A3;} 
+input.ng-dirty.ng-valid{ border-style:1px solid;
+    border-color:green;}

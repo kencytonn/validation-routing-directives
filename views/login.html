@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html>
+<html ng-app="bookstore">
+<head>
+<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="../style.css"/>
+<script type="text/javascript" src="../angular.min.js"></script>
+<script type="text/javascript" src="../app.js"></script>
+</head>
+<body ng-controller="LoginController"> -->
+
+<form class="form-horizontal" name="myApp" novalidate>
+<fieldset>
+
+<!-- Form Name -->
+<legend>Login to Your Account</legend>
+
+<!-- Text input-->
+<div class="form-group" >
+  <label class="col-md-4 control-label" for="username">UserName*</label>  
+  <div class="col-md-5">
+  <input id="username" name="username" type="text" placeholder="Enter username" ng-model="user.username" class="form-control input-md" required>
+    <span ng-show="myApp.username.$dirty && myApp.username.$error.required">Required: Enter UserName</span>
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="p_word">Password</label>
+  <div class="col-md-5">
+    <input id="p_word" name="p_word" type="password" placeholder="*****" ng-model="user.p_word" class="form-control input-md" required>
+    <span ng-show="myApp.p_word.$dirty && myApp.p_word.$error.required">Required: Password</span>
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="login"></label>
+  <div class="col-md-8">
+    <button id="login" name="login" class="btn btn-success" >Login</button>
+    <button id="signup" name="signup" class="btn btn-warning">SignUp</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+<!-- </body>
+</html> -->
+
